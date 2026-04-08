@@ -9,12 +9,12 @@
 
 ## 📚 Tablas implementadas (CRUD completo)
 
-| # | Tabla | Endpoint base | ¿Relación? |
-|---|-------|---------------|-------------|
-| 1 | Asignaturas | `/api/v1/asignaturas` | ❌ |
-| 2 | Grupos | `/api/v1/grupos` | ❌ |
-| 3 | **Inscripciones** (API Principal) | `/api/v1/inscripciones` | ✅ (relación con alumnos, grupos, asignaturas) |
-| 4 | Usuarios | `/api/v1/usuarios` | ❌ |
+| # | Tabla | Endpoint base |
+|---|-------|---------------|
+| 1 | Asignaturas | `/api/v1/asignaturas` | 
+| 2 | Grupos | `/api/v1/grupos` | 
+| 3 | **Inscripciones** (API Principal) | `/api/v1/inscripciones` | 
+| 4 | Usuarios | `/api/v1/usuarios` | 
 
 > ⭐ La tabla **Inscripciones** es la *API Principal* y contiene relaciones bidireccionales manejadas con `@JsonIgnore` para evitar bucles infinitos en el JSON.
 
